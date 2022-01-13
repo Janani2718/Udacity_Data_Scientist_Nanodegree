@@ -9,20 +9,27 @@ Given real world disaster messages as dataset, first ETL pipeline is run through
 app
 
 | - template
+
 | |- master.html # main page of web app
+
 | |- go.html # classification result page of web app
+
 |- run.py # Flask file that runs app
 
 data
 
 |- disaster_categories.csv # data to process
+
 |- disaster_messages.csv # data to process
+
 |- process_data.py # data cleaning pipeline
+
 |- InsertDatabaseName.db # database to save clean data to
 
 models
 
 |- train_classifier.py # machine learning pipeline
+
 |- classifier.pkl # saved model
 
 README.md
@@ -48,11 +55,14 @@ README.md
 
 The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means to display data visualisations.
 Following images depicts the UI and the output from the app.
+<img width="798" alt="app1" src="https://user-images.githubusercontent.com/81457427/149317689-8451cd6e-b7f5-4b18-a295-7f614ded9802.png">
 
-![App](Web app demonstrations/app1.png)
-![App](Web app demonstrations/app2.png)
-![App](Web app demonstrations/app3.png)
+<img width="769" alt="app 2" src="https://user-images.githubusercontent.com/81457427/149317685-f88de464-de35-483a-8e10-c25fb5f850f3.png">
+
+<img width="1280" alt="app 3" src="https://user-images.githubusercontent.com/81457427/149317679-4dc51a4c-f633-4fd8-a7d2-66196e792c50.png">
+
 
 ## Acknowledgement
 
 I thank Udacity for the web app code and Figure Eight for their disaster response dataset.
+
