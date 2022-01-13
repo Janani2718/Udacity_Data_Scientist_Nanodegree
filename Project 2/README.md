@@ -46,4 +46,7 @@ README.md
 
 ## Visualisation Using Web App
 
-The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means fo data visualisation  following image shows the main 
+The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means to display data visualisations.
+Following images depicts the UI and the output from the app.
+
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
