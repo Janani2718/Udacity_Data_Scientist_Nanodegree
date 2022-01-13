@@ -49,4 +49,10 @@ README.md
 The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means to display data visualisations.
 Following images depicts the UI and the output from the app.
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![App](Web app demonstrations/app1.png)
+![App](Web app demonstrations/app2.png)
+![App](Web app demonstrations/app3.png)
+
+## Acknowledgement
+
+I thank Udacity for the web app code and Figure Eight for their disaster response dataset.
