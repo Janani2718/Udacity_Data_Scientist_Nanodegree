@@ -43,3 +43,7 @@ README.md
 2. In order to run the ML pipeline, run the command inside models directory: python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 3. Run the command: python run.py inside app's directory to run the web app
 4. Go to the webpage [http://0.0.0.0:3001/](http://0.0.0.0:3001/)
+
+## Visualisation Using Web App
+
+The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means fo data visualisation  following image shows the main 
