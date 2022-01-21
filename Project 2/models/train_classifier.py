@@ -22,6 +22,18 @@ nltk.download(['punkt', 'wordnet'])
 
 
 def load_data(database_filepath):
+    
+     '''
+    This function loads the dataset from given database
+    
+    Input:
+    database_filepath - Filepath of the database where the data is saved
+    
+    Output:
+    X - Features for the classification model to be built
+    y - Target Variable for the classification model to be built
+    '''
+    
     engine = create_engine(f'sqlite:///{database_filepath}')
     df = pd.read_sql_table('disaster', con=engine)
     X = df['message']
@@ -31,14 +43,35 @@ def load_data(database_filepath):
 
 def tokenize(text):
     
-    words = word_tokenize(text)
-    lemmatizer = WordNetLemmatizer()
+    '''
+    This function performs a series of text proceesing on the given piece of text
+    
+    Input:
+    text - The text which is to be processed
+    
+    Output:
+    clean_words - Tokens of given text after processing and cleaning
+    '''
+    
+    words = word_tokenize(text) # To tokenize the text
+    lemmatizer = WordNetLemmatizer() # Initialization of Lemmatizer object
     clean_words = []
     for word in words:
-        clean_words.append(lemmatizer.lemmatize(word).lower().strip())
+        clean_words.append(lemmatizer.lemmatize(word).lower().strip()) # Lemmatizes, case normalizes and strips each word token.
     return clean_words
 
 def build_model():
+    
+     '''
+    This function builds a pipeline which entails the classification model. The pipeline contains a CountVectorizer,TfidfTransformer, RandomForestClassifier. 
+    The pipeline also undergoes a grid search for hyper tuning and is returned with its best parameters.
+   
+    Input:
+    None
+    
+    Output:
+    cv - The classifier model post Grid search.
+    '''
     pipeline = Pipeline([
     ('vect',CountVectorizer(tokenizer = tokenize)),
     ('tfidf',TfidfTransformer()),
@@ -55,6 +88,20 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
+    
+    '''
+    This function evaluates a given model.
+    
+    Input:
+    model : The model to be evaluated
+    X_test : The features in test dataset.
+    Y_test : Target variable values in the dataset
+    category_names: All unique categorie values
+    
+    Output:
+    None : Prints the accuracy of the model
+    '''
+    
     y_pred = model.predict(X_test)
     for i, column in enumerate(y_test):
         print('Category:',column,classification_report(y_test[column],y_pred[:,i]))
@@ -62,6 +109,16 @@ def evaluate_model(model, X_test, Y_test, category_names):
     print('Accuracy of the model: ',accuracy)
 
 def save_model(model, model_filepath):
+    '''
+    This function save the model in a pickle file
+    
+    Input:
+    model - The model to be saved
+    model_filepath - The filepath of the pickle file where the data is to be stored
+    
+    Output:
+    None
+    '''
     filename = model_filepath
     pickle.dump(model, open(filename, 'wb'))
 
