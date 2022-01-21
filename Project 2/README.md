@@ -58,7 +58,7 @@ Following images depicts the UI and the output from the app.
 
 ![app 1](https://user-images.githubusercontent.com/81457427/150472047-ad6bade6-8008-49ab-b417-e4f67fb95ca2.JPG)
 
-<img width="769" alt="app 2" src="https://user-images.githubusercontent.com/81457427/150472077-5f885af9-dba8-40e1-b41d-a091e78a4639.png">
+![newplot](https://user-images.githubusercontent.com/81457427/150568508-a76b1122-97fc-4691-9baf-53b74f3a1561.png)
 
 ![app 3](https://user-images.githubusercontent.com/81457427/150472100-bad631cf-dfe5-4e45-bff1-7387f7ab4daa.JPG)
 
