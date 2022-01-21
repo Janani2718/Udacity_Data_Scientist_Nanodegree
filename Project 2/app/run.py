@@ -67,7 +67,7 @@ def index():
                     'title': "Genre"
                 }
             }
-        }
+        },
         {
             'data':[
                 Bar( x = category_values,
