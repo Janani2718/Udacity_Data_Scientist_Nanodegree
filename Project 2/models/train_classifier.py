@@ -87,7 +87,7 @@ def build_model():
     return cv
 
 
-def evaluate_model(model, X_test, Y_test, category_names):
+def evaluate_model(model, X_test, Y_test):
     
     '''
     This function evaluates a given model.
@@ -96,7 +96,6 @@ def evaluate_model(model, X_test, Y_test, category_names):
     model : The model to be evaluated
     X_test : The features in test dataset.
     Y_test : Target variable values in the dataset
-    category_names: All unique categorie values
     
     Output:
     None : Prints the accuracy of the model
@@ -137,7 +136,7 @@ def main():
         model.fit(X_train, Y_train)
         
         print('Evaluating model...')
-        evaluate_model(model, X_test, Y_test, category_names)
+        evaluate_model(model, X_test, Y_test)
 
         print('Saving model...\n    MODEL: {}'.format(model_filepath))
         save_model(model, model_filepath)
