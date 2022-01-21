@@ -23,7 +23,7 @@ nltk.download(['punkt', 'wordnet'])
 
 def load_data(database_filepath):
     
-     '''
+    '''
     This function loads the dataset from given database
     
     Input:
@@ -62,7 +62,7 @@ def tokenize(text):
 
 def build_model():
     
-     '''
+    '''
     This function builds a pipeline which entails the classification model. The pipeline contains a CountVectorizer,TfidfTransformer, RandomForestClassifier. 
     The pipeline also undergoes a grid search for hyper tuning and is returned with its best parameters.
    
