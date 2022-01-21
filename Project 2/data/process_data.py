@@ -44,6 +44,7 @@ def clean_data(df):
     # convert column from string to numeric
         categories[column] = categories[column].astype('int')
     
+    categories['related'] = categories['related'].replace(to_replace=2, value=1)
     df = df.drop(['categories'],axis = 1)
     df = pd.concat([df,categories],axis = 1)
     df = df.drop_duplicates()
