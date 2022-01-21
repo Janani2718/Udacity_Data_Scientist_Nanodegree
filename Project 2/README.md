@@ -56,13 +56,11 @@ README.md
 The flask web app is deisgned in a way to output the categories of the given disaster concerning message. The app also has the means to display data visualisations.
 Following images depicts the UI and the output from the app.
 
-![app](Web app demonstrations/app 1.jpg)
+![app 1](https://user-images.githubusercontent.com/81457427/150472047-ad6bade6-8008-49ab-b417-e4f67fb95ca2.JPG)
 
-![app](Web app demonstrations/app 2.png)
+<img width="769" alt="app 2" src="https://user-images.githubusercontent.com/81457427/150472077-5f885af9-dba8-40e1-b41d-a091e78a4639.png">
 
-![app](Web app demonstrations/app 3.jpg)
-
-
+![app 3](https://user-images.githubusercontent.com/81457427/150472100-bad631cf-dfe5-4e45-bff1-7387f7ab4daa.JPG)
 
 ## Acknowledgement
 
