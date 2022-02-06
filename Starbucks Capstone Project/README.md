@@ -6,7 +6,7 @@
 4. Seaborn
 
 ## Project Motivation:
-The main motivation of this project is to analyse the simulated data that mimics customer behavior on the Starbucks rewards mobile app.Through this project I strive to find out different demographic infromation of the offers that Starbucks send out. I have also built a classifier model to predict the response of the given user to the given offer,
+The main motivation of this project is to analyse the simulated data that mimics customer behavior on the Starbucks rewards mobile app.Through this project I strive to combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type. I have also built a classifier model to predict the response of the given user to the given offer,
 
 ## File Descriptions:
 - Starbucks_Capstone_notebook : A jupyter notebook that contains the code for all the work I've done.
@@ -15,7 +15,7 @@ The main motivation of this project is to analyse the simulated data that mimics
 - transcript.json - records for transactions, offers received, offers viewed, and offers completed
 
 ## How to interact with my project:
-I have shared all of the detailed insights that I've acquired from this project, in this medium post [here](https://medium.com/@Janani2718/data-will-be-there-for-you-like-its-been-there-before-d8cb42c07cf4)
+I have shared all of the detailed insights that I've acquired from this project, in this medium post [here](https://medium.com/@Janani2718/what-does-data-tell-about-starbucks-offers-d896b5a37c68)
 
 ##  Licensing, Authors, Acknowledgements, etc:
 I hereby acknowledge Starbucks and Udacity for giving me access to this dataset.
