@@ -1,4 +1,4 @@
-# Analysis of Friends episode data
+# Starbucks Capstone Project
 ## Installations:
 1. Numpy
 2. Matplotlib
